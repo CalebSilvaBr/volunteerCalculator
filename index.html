@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+		<title>Clínica de Finanças Mackenzie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<div class="logo"><img src="images/mackwhite.png"></div>
+					<nav>
+						<ul>
+							<li><a href="#intro">Bem-vindo</a></li>
+							<li><a href="#four">O Projeto</a></li>
+							<li><a href="#one">Quem somos</a></li>
+							<li><a href="#two">Calculadora Financeira</a></li>
+							<li><a href="#three">Inscreva-se</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Nome do Projeto</h1>
+							<p>Onde o trabalho voluntário se destaca.</p>
+							<ul class="actions">
+								<li><a href="#four" class="button scrolly">Saiba Mais</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>O Projeto</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>	
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/Edmundo.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Feugiat consequat</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="" target="_blank" class="button">Linkedin</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Feugiat consequat</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/Caleb.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Caleb Silva - Colaborador Clínico</h2>
+									<p>Professor de idiomas há mais de 15 anos, Caleb Silva é formado em Comércio Exterior pela FATEC e cursa MBA pela USP. É ______________________.</p>
+									<ul class="actions">
+										<li><a href="https://www.linkedin.com/in/calebsleb/" target="_blank" class="button">Linkedin</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+				<style type="text/css">
+					.table{
+						width: 100%;
+						border-collapse: collapse;
+					}
+				
+				@media (max-width: 480px){
+					.table thead{
+						display: none;
+					}
+					.table, .table tbody, .table tr, .table td{
+						display: block;
+						width: 100%;
+					}
+				}	
+				@media (max-width: 768px){
+					.table thead{
+						display: none;
+					}
+				}
+				</style>
+
+				<script src=assets/js/script.js></script>
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Calculadora Financeira</h2>
+							<p>Faça cálculos de juros simples, compostos, dívidas e mais.</p>
+							<div class="features">
+								<section>
+										<h3>Juros Simples</h3>
+										<div class="contents">
+											<table id="table" class="table">
+												<tbody>
+													<tr>
+														<td class="labels">Valor Inicial</td>
+														<td>
+															<input type="text" id="principal">
+														</td>
+													</tr>
+													<tr>
+														<td class="labels">Taxa de Rendimento</td>
+														<td>
+															<input type="text" id="rate" name="rate"> 
+														</td>
+													</tr>
+													<tr>
+														<td class="labels">Anos</td>
+														<td>
+															<input type="text" name="years" id="years">
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<button id="compute" onclick="compute()">Calcular</button> <br>
+											<span id="result">
+											</span>
+										</div>
+								</section>
+								<section>
+									<h3>Juros Compostos</h3>
+									<div class="contents">
+										<table id="table" class="table">
+											<tbody>
+												<tr>
+													<td class="labels">Valor Inicial</td>
+													<td>
+														<input type="text" id="principal2">
+													</td>
+												</tr>
+												<tr>
+													<td class="labels">Aporte Mensal</td>
+													<td>
+														<input type="text" id="monthly2">
+													</td>
+												</tr>                        
+												<tr>
+													<td class="labels">Taxa de Rendimento</td>
+													<td>
+														<input type="text" id="rate2" name="rate2"> 
+													</td>
+												</tr>
+												<tr>
+													<td class="labels">Anos</td>
+													<td>
+														<input type="text" name="years2" id="years2">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<button id="compute2" onclick="compute2()">Calcular</button> <br>
+										<span id="result2">
+										</span>
+									</div>
+								</section>
+								
+					<script src=assets/js/newton.js></script>
+					<section>
+						<div class="inner">
+								<form name="form1">
+								<table summary="Tabela de calculo" class = "table">
+								<h3>Financiamento</h3>
+								<div class="contents">
+								<thead>
+								<tr>
+								<td class="labels" colspan="2"  nowrap="nowrap">
+								<strong>Calcule a informação desejada</strong>
+								<span class="textoPequeno">(Informe 3 valores e pressione o botão 'Calcular' para obter o 4º.)</span></td>
+								</tr><tr>
+								<th>Info</th>
+								<th>Cálculo</th>
+								</tr>
+								</thead>
+								<tbody>
+
+								<tr>
+								<td for="meses" data-label="Info">Nº de meses:</td></p>
+								<td>
+								<input name="periodo" id="meses" size="10" title="Digite o número de meses" tabindex="1" value="" type="text" data-label="Cálculo">
+								</td>
+								</tr>
+								
+								<tr>
+								<td for="juros" data-label="Info">Taxa de juros mensal:</td></p>
+								<td>
+								<input name="juros" id="juros" size="10" tabindex="2" title="Digite taxa de juros mensal" value="" type="text" data-label="Cálculo">%
+								</td>
+								</tr>
+
+								<tr>
+								<td for="prestacao" data-label="Info">Valor da prestação:
+								<p>(Considera-se que a 1ª prestação não seja no ato.)</p></p>
+								</td>
+								<td>
+								<input name="parcela" id="prestacao" size="16" tabindex="3" title="Digite valor da prestação" value="" type="text" data-label="Cálculo">
+								</td>
+								</tr>
+								
+								<tr>
+								<td for="montante" data-label="Info">Valor financiado:
+								<p>(O Valor financiado não inclui o valor da entrada.)</p></p>	
+								</td>
+								<td>
+								<input name="montante" size="16" tabindex="4" title="Digite o valor financiado" id="montante" value="" type="text" data-label="Cálculo">
+								</td>
+								</tr>
+								
+								<tr>
+								<td colspan="2">
+								<input name="Button" type="button" tabindex="5" onClick="Calcular()" onKeyPress="Calcular()" value="Calcular">
+								<input value="Limpar" onClick="Limpar()" onKeyPress="Limpar()" tabindex="6" type="button"></td>
+								<span id="result3">
+								</span>
+								</tr>
+								</div>
+								</div>
+								</tbody>
+								</table></form>
+							</div>
+						</section>	
+					</section>
+			
+				<!-- Three -->
+				<div>	
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Desculpe-nos</h2>
+							<p>Nossas inscrições ainda não estão abertas.</p>
+							<section>
+									<p>Social</p>
+									<ul class="icons">
+									<li><a href="" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+							</section>	
+						</div>
+					</section>
+				</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Caleb Silva</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
